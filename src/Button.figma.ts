@@ -1,5 +1,4 @@
 // url=https://www.figma.com/design/1vY6IaRKuv8Kgs2w4OupPn/Code-Connect-Demo?node-id=1-124
-// source=node_modules/@mui/material/Button/Button.js
 // component=Button
 import figma from 'figma'
 const instance = figma.selectedInstance
