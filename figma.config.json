@@ -1,0 +1,10 @@
+{
+  "$schema": "https://www.figma.com/code-connect/schema/1",
+  "codeConnect": {
+    "parser": "react",
+    "include": ["src/**/*.figma.ts"],
+    "importPaths": {
+      "src/**": "@mui/material"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "figma-code-connect",
+  "version": "1.0.0",
+  "description": "Figma Code Connect mappings for MUI components",
+  "private": true,
+  "devDependencies": {
+    "@figma/code-connect": "^1.0.0",
+    "@mui/material": "^5.0.0",
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
