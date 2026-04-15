@@ -14,5 +14,5 @@ jobs:
         with:
           node-version: '24'
           cache: 'npm'
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
       - run: npx figma connect publish --token ${{ secrets.FIGMA_ACCESS_TOKEN }} --verbose
