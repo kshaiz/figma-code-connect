@@ -1,7 +1,7 @@
 import figma from '@figma/code-connect'
-import { Button } from '@mui/material'
+import StyledButton from './StyledButton'
 
-figma.connect(Button, 'https://www.figma.com/design/nSb86jpFeaJ929PkSyyK2H/Code-Connect---MUI-for-Figma-v7.2.0---Material-UI---Standard?node-id=6543-36744', {
+figma.connect(StyledButton, 'https://www.figma.com/design/nSb86jpFeaJ929PkSyyK2H/Code-Connect---MUI-for-Figma-v7.2.0---Material-UI---Standard?node-id=6543-36744', {
   props: {
     variant: figma.enum('Variant', {
       'Contained': 'contained',
@@ -41,7 +41,7 @@ figma.connect(Button, 'https://www.figma.com/design/nSb86jpFeaJ929PkSyyK2H/Code-
     }),
   },
   example: ({ variant, size, color, disabled, label, startIcon, endIcon }) => (
-    <Button
+    <StyledButton
       variant={variant}
       size={size}
       color={color}
@@ -50,6 +50,6 @@ figma.connect(Button, 'https://www.figma.com/design/nSb86jpFeaJ929PkSyyK2H/Code-
       endIcon={endIcon}
     >
       {label}
-    </Button>
+    </StyledButton>
   ),
 })
