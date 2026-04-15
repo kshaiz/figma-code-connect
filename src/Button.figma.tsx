@@ -1,7 +1,7 @@
 import figma from '@figma/code-connect'
 import { Button } from '@mui/material'
 
-figma.connect(Button, 'https://www.figma.com/design/1vY6IaRKuv8Kgs2w4OupPn/Code-Connect-Demo?node-id=1-124', {
+figma.connect(Button, 'https://www.figma.com/design/nSb86jpFeaJ929PkSyyK2H/Code-Connect---MUI-for-Figma-v7.2.0---Material-UI---Standard?node-id=6543-36744', {
   props: {
     variant: figma.enum('Variant', {
       'Contained': 'contained',
@@ -10,36 +10,37 @@ figma.connect(Button, 'https://www.figma.com/design/1vY6IaRKuv8Kgs2w4OupPn/Code-
     }),
     size: figma.enum('Size', {
       'Large': 'large',
-      'Medium*': 'medium',
+      'Medium': 'medium',
       'Small': 'small',
     }),
     color: figma.enum('Color', {
-      'Primary*': 'primary',
+      'Primary': 'primary',
       'Secondary': 'secondary',
       'Error': 'error',
+      'Warning': 'warning',
       'Info': 'info',
       'Success': 'success',
       'Inherit': 'inherit',
-      'Warning': 'warning',
+      'Inherit (white)': 'inherit',
     }),
     disabled: figma.enum('State', {
       'Enabled': false,
       'Hovered': false,
       'Focused': false,
+      'Pressed': false,
       'Disabled': true,
     }),
     label: figma.string('Label'),
-    labelShow: figma.boolean('Label Show'),
-    startIcon: figma.boolean('Left Icon Show', {
-      true: figma.instance('Left Icon'),
+    startIcon: figma.boolean('Start Icon', {
+      true: figma.instance('↳ Start Icon'),
       false: undefined,
     }),
-    endIcon: figma.boolean('Right Icon Show', {
-      true: figma.instance('Right Icon'),
+    endIcon: figma.boolean('End Icon', {
+      true: figma.instance('↳ End Icon'),
       false: undefined,
     }),
   },
-  example: ({ variant, size, color, disabled, label, labelShow, startIcon, endIcon }) => (
+  example: ({ variant, size, color, disabled, label, startIcon, endIcon }) => (
     <Button
       variant={variant}
       size={size}
@@ -48,7 +49,7 @@ figma.connect(Button, 'https://www.figma.com/design/1vY6IaRKuv8Kgs2w4OupPn/Code-
       startIcon={startIcon}
       endIcon={endIcon}
     >
-      {labelShow ? label : undefined}
+      {label}
     </Button>
   ),
 })
