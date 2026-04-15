@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "Figma Code Connect mappings for MUI components",
   "private": true,
+  "scripts": {
+    "publish": "figma connect publish"
+  },
   "devDependencies": {
     "@figma/code-connect": "^1.0.0",
     "@mui/material": "^5.0.0",
     "@types/react": "^18.0.0",
+    "react": "^18.0.0",
     "typescript": "^5.0.0"
   }
 }

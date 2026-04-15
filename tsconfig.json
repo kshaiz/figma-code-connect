@@ -3,9 +3,9 @@
     "target": "ES2017",
     "module": "commonjs",
     "lib": ["es2017"],
+    "jsx": "react",
     "strict": true,
-    "esModuleInterop": true,
-    "types": ["@figma/code-connect/figma-types"]
+    "esModuleInterop": true
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
 }
